@@ -380,54 +380,7 @@ button:hover {
 }
 
 
-@media (max-width: 768px) {
-  .cart {
-    padding: 10px;
-  }
 
-  .cart-table, .cart-table tbody, .cart-table tr, .cart-table th, .cart-table td {
-    display: block; /* Cambia a bloque */
-    width: 100%;
-  }
-
-  .cart-table tr {
-    margin-bottom: 10px; /* Añadir espacio entre filas */
-    display: flex;
-    flex-direction: column; /* Organiza los elementos en columnas */
-  }
-
-  .cart-table td {
-    text-align: right; /* Alinear contenido a la derecha */
-    position: relative;
-    padding-left: 50%; /* Deja espacio para el label */
-  }
-
-  .cart-table td:before {
-    content: attr(data-label); /* Mostrar el título de la columna */
-    position: absolute;
-    left: 0;
-    width: 50%; /* Espacio para el título */
-    padding-left: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left; /* Alinear el label a la izquierda */
-  }
-
-  .cart-table img {
-    width: 50px; /* Reducir tamaño de imagen en móviles */
-    height: auto;
-  }
-
-  .cart-actions {
-    justify-content: center; /* Centra el botón en móviles */
-    margin-top: 20px;
-  }
-
-  #checkout {
-    width: 100%; /* Botón de checkout más ancho en móviles */
-    padding: 10px;
-  }
-}
 
 
 
