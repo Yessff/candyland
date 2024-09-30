@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candyland - Carrito</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="contact-info">
+            <span>Contacto: +502 1234 5678</span>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index1.html"><img src="images/logo_candyland.png" alt="Candyland Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="chocolates.html">Chocolates</a></li>
+            <li><a href="caramelos.html">Caramelos</a></li>
+            <li><a href="galletas.html">Galletas</a></li>
+            <li><a href="postres.html">Postres</a></li>
+            <li><a href="pasteles.html">Pasteles</a></li>
+            <li><a href="carrito.html">Ir al Carrito <span id="cart-count">(0)</span></a></li>
+        </ul>
+    </nav>
+
+    <section class="cart">
+        <h1>Carrito de Compras</h1>
+        <table id="cart-items" class="cart-table">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los productos se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+
+        <div class="cart-actions">
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" required>
+
+                <label for="payment-method">Método de Pago:</label>
+                <select id="payment-method" required>
+                    <option value="">Selecciona</option>
+                    <option value="credit-card">Tarjeta de Crédito/Debito</option>
+                    <option value="transfer">Transferencia ACH</option>
+                </select>
+
+                <button type="submit">Pagar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright&copy; 2024 CandyLand. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candyland - Chocolates</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="top-header">
+        <div class="contact-info">
+            <span>Contacto: +502 1234 5678</span>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index1.html"><img src="images/logo_candyland.png" alt="Candyland Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li class="menu-item">
+                <a href="#" id="menu-link">Menú</a>
+                  <ul class="dropdown">
+                <li><a href="chocolates.html">Chocolates</a></li>
+                <li><a href="caramelos.html">Caramelos</a></li>
+                <li><a href="galletas.html">Galletas</a></li>
+                <li><a href="postres.html">Postres</a></li>
+                <li><a href="pasteles.html">Pasteles</a></li>
+                </ul>
+            </li>
+            <li><a href="carrito.html">Ir al Carrito <span id="cart-count">(0)</span></a></li>
+            <li><a href="Encuentranos.html">Encuéntranos</a></li>
+            <li><a href="Acerca de nosotros.html">Quiénes somos</a></li>
+        </ul>
+    </nav>
+
+    <section class="products">
+        <h1>Postres</h1>
+        <div class="product-grid">
+            <div class="product">
+                <div class="carousel">
+                    <div class="product-images">
+                        <img src="images/cuprete1.png" alt="Cupcakes con relleno" class="product-img" style="opacity: 1;">
+                        <img src="images/cuprete2.png" alt="Cupcakes con relleno" class="product-img">
+                        <img src="images/cuprete3.png" alt="Cupcakes con relleno" class="product-img">
+                    </div>
+                    <button class="prev" onclick="changeImage(this, -1)">&#10094;</button>
+                    <button class="next" onclick="changeImage(this, 1)">&#10095;</button>
+                </div>
+                <h2>Cupcakes con con relleno y/o tematica</h2>
+                <p>Precio: Q10.00</p>
+                <button class="add-to-cart" data-name="Cupcakes con relleno" data-price="10.00" data-image="images/cuprete1.png">Agregar al Carrito</button>
+            </div>
+                <div class="product">
+                    <div class="carousel">
+                        <div class="product-images">
+                            <img src="images/dodeco1.png" alt="Donas Decoradas" class="product-img" style="opacity: 1;">
+                            <img src="images/dodeco2.png" alt="Donas Decoradas" class="product-img">
+                            <img src="images/dodeco3.png" alt="Donas Decoradas" class="product-img">
+                        </div>
+                        <button class="prev" onclick="changeImage(this, -1)">&#10094;</button>
+                        <button class="next" onclick="changeImage(this, 1)">&#10095;</button>
+                    </div>
+                    <h2>Donas Decoradas</h2>
+                    <p>Precio: Q10.00</p>
+                    <button class="add-to-cart" data-name="Donas Decoradas" data-price="10.00" data-image="images/dodeco1.png">Agregar al Carrito</button>
+                </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footerBottom">
+            <p>Copyright &copy; 2023; Designed by <span class="designer">Ashley</span></p>
+        </div>
+    </footer>
+    <script src="menu.js"></script>
+    <script src="carrito.js"></script>
+</body>
+</html>
