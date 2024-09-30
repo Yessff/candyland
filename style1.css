@@ -347,10 +347,7 @@ footer {
 }
 
 
-/* Ajuste para la columna de eliminar */
-.cart-table td:last-child {
-  text-align: center; /* Centra el contenido de la columna de eliminar */
-}
+
 
 #checkout {
   background-color: #ff6666; /* Color para el botón de finalizar compra */
@@ -378,9 +375,6 @@ button {
 button:hover {
   background-color: #ff3333; /* Efecto hover para el botón */
 }
-
-
-
 
 
 
