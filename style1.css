@@ -374,6 +374,54 @@ button:hover {
 }
 
 
+@media (max-width: 768px) {
+  .cart {
+    padding: 10px;
+  }
+
+  .cart-table th, .cart-table td {
+    padding: 10px;
+    font-size: 14px; /* Reduce el tamaño de la fuente */
+  }
+
+  .cart-table img {
+    width: 50px; /* Tamaño más pequeño para las imágenes */
+  }
+
+  .cart-table, .cart-table tbody, .cart-table tr, .cart-table th, .cart-table td {
+    display: block; /* Hacer que los elementos se vean en bloque en pantallas pequeñas */
+    width: 100%;
+  }
+
+  .cart-table tr {
+    margin-bottom: 10px; /* Espacio entre filas */
+    display: flex;
+    flex-direction: column; /* Ordenar columnas en filas en pantallas pequeñas */
+  }
+
+  .cart-table td {
+    text-align: right; /* Alinear texto a la derecha en pantallas pequeñas */
+  }
+
+  .cart-table td:before {
+    content: attr(data-label); /* Muestra la cabecera de la columna en móviles */
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .cart-actions {
+    justify-content: center; /* Centra el botón en pantallas pequeñas */
+  }
+
+  #checkout {
+    width: 100%; /* Botón de checkout a lo ancho en móviles */
+    padding: 10px;
+  }
+}
+
+
+
 /* Estilos para el modal cobro */
 .modal {
   display: none; /* Ocultado por defecto */
