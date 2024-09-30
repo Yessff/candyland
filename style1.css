@@ -346,6 +346,12 @@ footer {
   margin-top: 20px;
 }
 
+
+/* Ajuste para la columna de eliminar */
+.cart-table td:last-child {
+  text-align: center; /* Centra el contenido de la columna de eliminar */
+}
+
 #checkout {
   background-color: #ff6666; /* Color para el botón de finalizar compra */
   color: white;
@@ -374,48 +380,51 @@ button:hover {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .cart {
     padding: 10px;
   }
 
-  .cart-table th, .cart-table td {
-    padding: 10px;
-    font-size: 14px; /* Reduce el tamaño de la fuente */
-  }
-
-  .cart-table img {
-    width: 50px; /* Tamaño más pequeño para las imágenes */
-  }
-
   .cart-table, .cart-table tbody, .cart-table tr, .cart-table th, .cart-table td {
-    display: block; /* Hacer que los elementos se vean en bloque en pantallas pequeñas */
+    display: block; /* Cambia a bloque */
     width: 100%;
   }
 
   .cart-table tr {
-    margin-bottom: 10px; /* Espacio entre filas */
+    margin-bottom: 10px; /* Añadir espacio entre filas */
     display: flex;
-    flex-direction: column; /* Ordenar columnas en filas en pantallas pequeñas */
+    flex-direction: column; /* Organiza los elementos en columnas */
   }
 
   .cart-table td {
-    text-align: right; /* Alinear texto a la derecha en pantallas pequeñas */
+    text-align: right; /* Alinear contenido a la derecha */
+    position: relative;
+    padding-left: 50%; /* Deja espacio para el label */
   }
 
   .cart-table td:before {
-    content: attr(data-label); /* Muestra la cabecera de la columna en móviles */
-    float: left;
+    content: attr(data-label); /* Mostrar el título de la columna */
+    position: absolute;
+    left: 0;
+    width: 50%; /* Espacio para el título */
+    padding-left: 10px;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: left; /* Alinear el label a la izquierda */
+  }
+
+  .cart-table img {
+    width: 50px; /* Reducir tamaño de imagen en móviles */
+    height: auto;
   }
 
   .cart-actions {
-    justify-content: center; /* Centra el botón en pantallas pequeñas */
+    justify-content: center; /* Centra el botón en móviles */
+    margin-top: 20px;
   }
 
   #checkout {
-    width: 100%; /* Botón de checkout a lo ancho en móviles */
+    width: 100%; /* Botón de checkout más ancho en móviles */
     padding: 10px;
   }
 }
