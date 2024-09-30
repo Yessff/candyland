@@ -42,6 +42,31 @@ body {
     color: #ffffff;
 }
 
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      padding: 5px;
+    }
+  
+    .navbar .nav-links a {
+      font-size: 16px; /* Reduce el tamaño de los enlaces de navegación */
+    }
+  
+    .welcome h1 {
+      font-size: 30px; /* Aún más pequeño en pantallas pequeñas */
+    }
+  
+    .welcome p {
+      font-size: 18px;
+    }
+  
+    .social-media img {
+      width: 15px; /* Ajusta los íconos aún más pequeños */
+      height: 15px;
+    }
+  }
+
 .navbar {
     position: fixed;
     top: 40px; 

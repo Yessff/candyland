@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 160px;
+  box-sizing: border-box;
 }
 
 main {
@@ -57,7 +58,8 @@ main {
   border-radius: 50%; /* Hacer los íconos circulares */
 }
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
     padding: 5px;
@@ -65,6 +67,14 @@ main {
 
   .navbar .nav-links a {
     font-size: 16px; /* Reduce el tamaño de los enlaces de navegación */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Alinea los enlaces del menú verticalmente */
+  }
+
+.logo img {
+    width: 120px; /* Ajusta el tamaño del logo en pantallas pequeñas */
   }
 
   .welcome h1 {
@@ -90,7 +100,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000000cc;
     box-sizing: border-box; /* Asegura que los márgenes no se desborden */
     z-index: 100;
   }
