@@ -83,11 +83,11 @@ main {
   }
 
   .welcome h1 {
-    font-size: 30px; /* Aún más pequeño en pantallas pequeñas */
+    font-size: 20px; /* Aún más pequeño en pantallas pequeñas */
   }
 
   .welcome p {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .social-media img {
@@ -225,7 +225,7 @@ footer{
   flex-direction: column; /* Asegura que los hijos estén apilados verticalmente */
   align-items: center; /* Centra los hijos en el eje horizontal */
   width: 100%;
-  padding: 70px 30px 20px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -305,6 +305,7 @@ footer {
 .footerBottom {
   background-color: #000;
   padding: 20px;
+  justify-content: center;
   text-align: center; /* Asegura que el texto esté centrado */
   margin-top: auto; /* Hace que el pie de página se quede en la parte inferior */
 }
