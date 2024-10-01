@@ -398,34 +398,35 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .cart-table th, .cart-table td {
+  .cart-table th {
+    display: none; /* Ocultar encabezados de la tabla en móviles */
+  }
+
+  .cart-table td {
+    display: block;
     padding: 10px 5px;
     font-size: 14px;
+    text-align: right; /* Alinear el contenido a la derecha */
+    position: relative;
   }
 
-  .cart-table img {
-    width: 60px;
-  }
-
-  .cart-table th, .cart-table td {
-    display: block;
+  .cart-table td[data-label]:before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
     text-align: left;
   }
 
   .cart-table tr {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
   }
 
-  .cart-table td[data-label]:before {
-    content: attr(data-label);
-    font-weight: bold;
-    margin-right: 10px;
-  }
-
-  .cart-table tr:hover {
-    background-color: transparent;
+  .cart-table img {
+    width: 60px;
   }
 
   .cart-actions {
