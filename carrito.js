@@ -100,13 +100,12 @@ function changeImage(button, direction) {
 
 
 document.getElementById("checkout").addEventListener("click", () => {
-    // Validación para revisar si el carrito está vacío
+    
     if (cart.length === 0) {
         alert("Por favor, agrega productos al carrito antes de finalizar la compra.");
-        return; // Detiene la ejecución si no hay productos en el carrito
+        return; 
     }
     
-    // Si hay productos, se muestra el modal de checkout
     document.getElementById("checkout-modal").style.display = "block"; 
 });
 

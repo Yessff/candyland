@@ -139,7 +139,7 @@ body {
     }
     
 .dropdown li a:hover {
-    background-color: #ffcc00;
+    background-color: #d0e9e9;
     }
     
 .menu-item:hover .dropdown {
@@ -148,7 +148,7 @@ body {
     
 
 section {
-        padding: 30px;
+        padding: 40px;
         margin-top: 60px;
         text-align: center;
     }    
