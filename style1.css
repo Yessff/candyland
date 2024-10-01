@@ -406,21 +406,21 @@ button:hover {
     display: block;
     padding: 10px 5px;
     font-size: 14px;
-    text-align: right; /* Alinear el contenido a la derecha */
+    text-align: right; 
     position: relative;
   }
 
   .cart-table td[data-label]:before {
-    content: attr(data-label); /* Mostrar el data-label como encabezado en móviles */
+    content: attr(data-label); 
     font-weight: bold;
     position: absolute;
     left: 0;
     text-align: left;
-    width: 50%; /* Darle espacio al data-label */
+    width: 50%; 
   }
 
   .cart-table td[data-label] {
-    padding-left: 50%; /* Mover el contenido original a la derecha para evitar duplicados */
+    padding-left: 50%; 
   }
 
   .cart-table tr {
