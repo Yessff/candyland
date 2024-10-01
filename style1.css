@@ -397,7 +397,7 @@ button:hover {
   background-color: #ff3333;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .cart-table th {
     display: none; /* Ocultar encabezados de la tabla en móviles */
   }
