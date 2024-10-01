@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 720px) {
   body {
     background-attachment: fixed;
   }
@@ -68,7 +68,7 @@ main {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .navbar {
     flex-direction: column;
     padding: 5px;
@@ -231,7 +231,7 @@ main {
   padding: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .footerContainer {
     padding: 10px;
   }
