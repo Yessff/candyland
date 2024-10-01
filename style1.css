@@ -7,7 +7,7 @@ body {
   width: 100%;
   background-image: url('images/dreamy-interior-mall.jpg'); 
   background-size: cover;
-  background-position: center center ;
+  background-position: center center;
   margin: 0;
   padding: 0;
   padding-top: 160px;
@@ -21,7 +21,7 @@ body {
 }
 
 main {
-  flex-grow: 1; /* Crece para ocupar el espacio disponible si no hay suficiente contenido */
+  flex-grow: 1;
 }
 
 .top-header, .navbar {
@@ -29,40 +29,44 @@ main {
   width: calc(100% - 4px);
   margin: 2px;
 }
-  .top-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
-    font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.8);
-    box-sizing: border-box; /* Esto asegura que el padding no exceda el ancho de la pantalla */
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
 }
+
 .top-header.active {
-  background-color: #D0E9E9;
+  background-color: #5c005c;
 }
+
 .contact-info {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
 }
+
 .social-media a {
   margin-left: 5px;
 }
+
 .social-media img {
   width: 15px;
   height: 15px;
   box-shadow: 2px 4px gray;
   border: 1px solid #ffffff;
   padding: 5px;
-  border-radius: 50%; /* Hacer los íconos circulares */
+  border-radius: 50%;
 }
-
 
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -71,19 +75,19 @@ main {
   }
 
   .navbar .nav-links a {
-    font-size: 16px; /* Reduce el tamaño de los enlaces de navegación */
+    font-size: 16px;
   }
 
   .nav-links {
-    flex-direction: column; /* Alinea los enlaces del menú verticalmente */
+    flex-direction: column;
   }
 
-.logo img {
-    width: 120px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+  .logo img {
+    width: 120px;
   }
 
   .welcome h1 {
-    font-size: 20px; /* Aún más pequeño en pantallas pequeñas */
+    font-size: 20px;
   }
 
   .welcome p {
@@ -91,43 +95,44 @@ main {
   }
 
   .social-media img {
-    width: 15px; /* Ajusta los íconos aún más pequeños */
+    width: 15px;
     height: 15px;
   }
 }
 
-  .navbar {
-    position: fixed;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #000000cc;
-    box-sizing: border-box; /* Asegura que los márgenes no se desborden */
-    z-index: 100;
-  }
-  .navbar.active {
-    background-color: #D0E9E9;
-  }
-  .scrol{
-    height: 100px;
-  }
- 
+.navbar {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000cc;
+  box-sizing: border-box;
+  z-index: 100;
+}
 
-  .logo img {
-    width: 200px; /* Cambia este valor a lo que prefieras */
-    height: auto; /* Mantiene la proporción de la imagen */
+.navbar.active {
+  background-color: #5c005c;
+}
+
+.scrol {
+  height: 100px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   align-items: center;
-  margin: 0; /* Remueve márgenes por defecto */
-  padding: 0; /* Remueve el padding por defecto */
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
@@ -141,7 +146,6 @@ main {
   font-size: 18px;
   padding: 10px 15px;
   transition: all 0.3s ease;
- 
 }
 
 .nav-links a:hover {
@@ -159,104 +163,105 @@ main {
 }
 
 .dropdown {
-display: none;
-position: absolute;
-background-color: #000000;
-list-style: none;
-top: 100%;
-left: 0;
-padding: 10px 0;
-z-index: 200; /* Menú superior */
-width: 150px; /* Para darle espacio */
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  z-index: 200;
+  width: 150px;
 }
 
 .dropdown li {
-margin: 0;
+  margin: 0;
 }
 
 .dropdown li a {
-padding: 10px 20px;
-display: block;
+  padding: 10px 20px;
+  display: block;
 }
 
 .dropdown li a:hover {
-background-color: #ffcc00;
+  background-color: #ffcc00;
 }
 
 .menu-item:hover .dropdown {
-  display: block; /* Mostrar cuando se hace clic */
+  display: block;
 }
 
 .welcome {
   text-align: center;
-  background: linear-gradient(to right, #ff6f61, #ffcc00); /* Degradado de izquierda a derecha */
-  padding: 50px 0; /* Espaciado superior e inferior */
-  border-radius: 10px; /* Bordes redondeados opcional */
+  background: linear-gradient(to right, #d01add, #f2aaae);
+  padding: 50px 0;
+  border-radius: 10px;
 }
 
 .welcome h1 {
-font-size: 70px;
-text-align: center;
-color: #fff;
-opacity: 0;
-animation: fadeIn 2s forwards;
-margin-top: 0;
+  font-size: 70px;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  margin-top: 0;
 }
 
 .welcome p {
-font-size: 35px;
-text-align: center;
-color: #fff;
-opacity: 0;
-animation: fadeIn 2s forwards;
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
 }
 
 @keyframes fadeIn {
-to {
-  opacity: 1000;
-}
-footer{
-  background-color: #111;
-}
+  to {
+    opacity: 1000;
+  }
 }
 
+
+
 .footerContainer {
-  display: flex; /* Usar flexbox para centrar elementos */
-  flex-direction: column; /* Asegura que los hijos estén apilados verticalmente */
-  align-items: center; /* Centra los hijos en el eje horizontal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   padding: 20px;
 }
 
 @media only screen and (max-width: 768px) {
   .footerContainer {
-    padding: 10px; /* Espaciado adicional en móviles */
+    padding: 10px;
   }
 }
 
-.socialIcons{
+.socialIcons {
   display: flex;
   justify-content: center;
 }
 
-.socialIcons a{
+.socialIcons a {
   text-decoration: none;
-  padding:  10px;
+  padding: 10px;
   background-color: white;
   margin: 10px;
   border-radius: 50%;
 }
-.socialIcons a i{
+
+.socialIcons a i {
   font-size: 2em;
   color: black;
-  opacity: 0,9;
+  opacity: 0.9;
 }
-/* Hover affect on social media icon */
-.socialIcons a:hover{
-  background-color: #111;
+
+.socialIcons a:hover {
+  background-color: #000000;
   transition: 0.5s;
 }
-.socialIcons a:hover i{
+
+.socialIcons a:hover i {
   color: white;
   transition: 0.5s;
 }
@@ -271,14 +276,12 @@ footer {
   margin-top: auto;
 }
 
-
-
-.footerNav{
+.footerNav {
   margin: 30px 0;
-  text-align: center; /* Centra el texto */
+  text-align: center;
 }
 
-.footerNav ul{
+.footerNav ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -286,8 +289,8 @@ footer {
   margin: 0;
 }
 
-.footerNav ul li a{
-  color:white;
+.footerNav ul li a {
+  color: white;
   margin: 0 20px;
   text-decoration: none;
   font-size: 1.2em;
@@ -296,24 +299,26 @@ footer {
 }
 
 .footerNav ul li {
-  margin: 5px 0; /* Espaciado vertical */
+  margin: 5px 0;
 }
 
-.footerNav ul li a:hover{
+.footerNav ul li a:hover {
   opacity: 1;
 }
+
 .footerBottom {
   background-color: #000;
   padding: 20px;
   justify-content: center;
-  text-align: center; /* Asegura que el texto esté centrado */
-  margin-top: auto; /* Hace que el pie de página se quede en la parte inferior */
+  text-align: center;
+  margin-top: auto;
 }
 
-.footerBottom p{
+.footerBottom p {
   color: white;
 }
-.designer{
+
+.designer {
   opacity: 0.7;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -348,76 +353,70 @@ footer {
 }
 
 .cart-table tr:hover {
-  background-color: #7ebfe2; /* Color al pasar el mouse */
+  background-color: #7ebfe2;
 }
 
 .cart-table img {
-  width: 80px; /* Tamaño de las imágenes */
-  height: auto; /* Mantiene la proporción */
-  border-radius: 5px; /* Bordes redondeados */
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .cart-actions {
   display: flex;
-  justify-content: flex-end; /* Alinea el botón a la derecha */
+  justify-content: flex-end;
   margin-top: 20px;
 }
 
-
-
-
 #checkout {
-  background-color: #ff6666; /* Color para el botón de finalizar compra */
+  background-color: #ff6666;
   color: white;
   border: none;
   padding: 12px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s; /* Efecto hover */
+  transition: background-color 0.3s;
 }
 
 #checkout:hover {
-  background-color: #ff3333; /* Efecto hover para el botón */
+  background-color: #ff3333;
 }
 
 button {
-  background-color: #ff6666; /* Color para el botón de eliminar */
+  background-color: #ff6666;
   color: white;
   border: none;
   padding: 8px 12px;
   cursor: pointer;
-  border-radius: 5px; /* Bordes redondeados */
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #ff3333; /* Efecto hover para el botón */
+  background-color: #ff3333;
 }
 
-
-
-/* Estilos para el modal cobro */
 .modal {
-  display: none; /* Ocultado por defecto */
-  position: fixed; /* Posición fija */
-  z-index: 1000; /* Asegurarse que esté por encima de otros elementos */
+  display: none;
+  position: fixed;
+  z-index: 1000;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto; /* 10% desde la parte superior y centrado */
+  margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 90%; /* Ancho del modal */
-  max-width: 400px; /* Ancho máximo */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-  overflow: hidden; /* Evitar que el contenido se desborde */
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .close-button {
@@ -441,26 +440,26 @@ label {
 }
 
 input, textarea {
-  width: calc(100% - 20px); /* Asegúrate de que el ancho sea 100% menos el padding */
+  width: calc(100% - 20px); 
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+  box-sizing: border-box; /
 }
 
 textarea {
-  resize: none; /* Evitar redimensionar */
-  height: 80px; /* Altura fija */
+  resize: none; 
+  height: 80px; 
 }
 
 .modal-actions {
   display: flex;
-  justify-content: flex-end; /* Alinea el botón a la derecha */
+  justify-content: flex-end; 
 }
 
 .modal-actions button {
-  background-color: #28a745; /* Color para el botón de confirmar compra */
+  background-color: #28a745; 
   color: white;
   border: none;
   padding: 10px 15px;
@@ -470,5 +469,5 @@ textarea {
 }
 
 .modal-actions button:hover {
-  background-color: #218838; /* Efecto hover para el botón */
+  background-color: #218838; 
 }

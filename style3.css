@@ -1,87 +1,85 @@
-
 body {  
-    background-image: url('images/dreamy-interior-mall.jpg'); 
-    background-size: cover;
-    background-position: no-repeat center center fixed ;
-    margin: 0;
-   
-  }
+  background-image: url('images/dreamy-interior-mall.jpg'); 
+  background-size: cover;
+  background-position: no-repeat center center fixed;
+  margin: 0;
+}
+
 .top-header {
-    background-color: #f8f9fa;
-    padding: 10px;
-    text-align: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-    padding: 5px;
-  }
+.navbar {
+  flex-direction: column;
+  padding: 5px;
+}
 
-  .navbar .nav-links a {
-    font-size: 16px; /* Reduce el tamaño de los enlaces de navegación */
-  }
+.navbar .nav-links a {
+  font-size: 16px;
+}
 
-  .welcome h1 {
-    font-size: 30px; /* Aún más pequeño en pantallas pequeñas */
-  }
+.welcome h1 {
+  font-size: 30px;
+}
 
-  .welcome p {
-    font-size: 18px;
-  }
+.welcome p {
+  font-size: 18px;
+}
 
-  .social-media img {
-    width: 15px; /* Ajusta los íconos aún más pequeños */
-    height: 15px;
-  }
+.social-media img {
+  width: 15px;
+  height: 15px;
+}
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #343a40;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #343a40;
+  color: white;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0; /* Remueve márgenes por defecto */
-    padding: 0; /* Remueve el padding por defecto */
-  }
-  
-  .nav-links li {
-    position: relative;
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-   
-  }
-  
-  .nav-links a:hover {
-    color: rgb(0, 0, 0);
-    background-color: #f3f3f3;
-    padding: 14px 20px;
-    text-align: center;
-    display: inline-block;
-    text-decoration: underline;
-    border-radius: 5px;
-  }
-  
-  .nav-links li:hover .dropdown {
-    display: none;
-  }
-  
-  .dropdown {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(0, 0, 0);
+  background-color: #f3f3f3;
+  padding: 14px 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+.nav-links li:hover .dropdown {
+  display: none;
+}
+
+.dropdown {
   display: none;
   position: absolute;
   background-color: #000000;
@@ -89,132 +87,130 @@ body {
   top: 100%;
   left: 0;
   padding: 10px 0;
-  z-index: 200; /* Menú superior */
-  width: 150px; /* Para darle espacio */
-  }
-  
-  .dropdown li {
+  z-index: 200;
+  width: 150px;
+}
+
+.dropdown li {
   margin: 0;
-  }
-  
-  .dropdown li a {
+}
+
+.dropdown li a {
   padding: 10px 20px;
   display: block;
-  }
-  
-  .dropdown li a:hover {
+}
+
+.dropdown li a:hover {
   background-color: #ffcc00;
-  }
-  
-  .menu-item:hover .dropdown {
-    display: block; /* Mostrar cuando se hace clic */
-  }
+}
+
+.menu-item:hover .dropdown {
+  display: block;
+}
 
 .products {
-    text-align: center;
+  text-align: center;
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cambia el tamaño mínimo de las columnas */
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px; /* Ancho máximo para centrar */
-    margin: 0 auto; /* Centra el grid en la página */
-    
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .product {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.2s;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
 }
 
 .products h1 {
-    font-size: 64px; /* Tamaño grande y llamativo */
-    background: linear-gradient(45deg, #ff8c00, #ff0080); /* Degradado de naranja a rosa */
-    -webkit-background-clip: text; /* Para navegadores WebKit */
-    background-clip: text; /* Compatible con otros navegadores */
-    -webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el degradado */
-    text-align: center; /* Centra el texto */
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Sombra negra suave para legibilidad */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    font-family: 'Pacifico', cursive; /* Aplica la fuente Pacifico */
-    transition: transform 0.4s ease; /* Efecto de transición suave */
-  }
-  
-  
-  .products h1:hover {
-    transform: scale(1.1); /* Efecto de agrandamiento al pasar el mouse */
-    text-shadow: 3px 3px 10px rgba(255, 0, 128, 0.8); /* Sombra más intensa para un brillo rosa */
-  }
+  font-size: 64px;
+  background: linear-gradient(45deg, #ff8c00, #ff0080);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  font-family: 'Pacifico', cursive;
+  transition: transform 0.4s ease;
+}
+
+.products h1:hover {
+  transform: scale(1.1);
+  text-shadow: 3px 3px 10px rgba(255, 0, 128, 0.8);
+}
 
 .carousel {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .product-images {
-    position: relative;
-    height: 200px; /* Ajusta según necesites */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-images img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .product-images img:nth-child(1) {
-    opacity: 1; /* Primera imagen visible por defecto */
+  opacity: 1;
 }
 
 button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
 button.prev {
-    left: 10px;
+  left: 10px;
 }
 
 button.next {
-    right: 10px;
+  right: 10px;
 }
 
 .add-to-cart {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .add-to-cart:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
 
 .footerBottom {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
 }
