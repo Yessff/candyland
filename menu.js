@@ -8,21 +8,21 @@ const header = document.querySelector('.top-header');
 
 
 
-const menuButton = document.querySelector('.nav-links > li > a'); // Enlaza al menú
+const menuButton = document.querySelector('.nav-links > li > a');
 const dropdown = document.querySelector('.dropdown');
 let isMenuOpen = false;
 
 menuButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Evita que el enlace funcione si no tiene que redirigir
-    isMenuOpen = !isMenuOpen; // Alterna el estado de apertura
-    dropdown.style.display = isMenuOpen ? 'block' : 'none'; // Muestra o esconde el menú
+    event.preventDefault(); 
+    isMenuOpen = !isMenuOpen; 
+    dropdown.style.display = isMenuOpen ? 'block' : 'none'; 
 });
 
 
 document.addEventListener('click', function(event) {
     if (!menuButton.contains(event.target) && !dropdown.contains(event.target)) {
-        isMenuOpen = false; // Cierra el menú
-        dropdown.style.display = 'none'; // Asegura que el menú esté cerrado
+        isMenuOpen = false; 
+        dropdown.style.display = 'none'; 
     }
 });
 

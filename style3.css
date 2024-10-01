@@ -209,8 +209,12 @@ button.next {
   background-color: #218838;
 }
 
-.footerBottom {
+footer {
   text-align: center;
-  padding: 20px;
-  background-color: #f8f9fa;
+  padding: 10px 0;
+  background-color: #000000;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }

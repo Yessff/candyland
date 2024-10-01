@@ -13,8 +13,8 @@ body {
 }
 
 .logo img {
-    width: 200px; /* Cambia este valor a lo que prefieras */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 200px; 
+    height: auto; 
 }
 
 .top-header {
@@ -50,19 +50,19 @@ body {
     }
   
     .navbar .nav-links a {
-      font-size: 16px; /* Reduce el tamaño de los enlaces de navegación */
+      font-size: 16px; 
     }
   
     .welcome h1 {
-      font-size: 30px; /* Aún más pequeño en pantallas pequeñas */
+      font-size: 25px; 
     }
   
     .welcome p {
-      font-size: 18px;
+      font-size: 12px;
     }
   
     .social-media img {
-      width: 15px; /* Ajusta los íconos aún más pequeños */
+      width: 15px; 
       height: 15px;
     }
   }
@@ -125,8 +125,8 @@ body {
     top: 100%;
     left: 0;
     padding: 10px 0;
-    z-index: 200; /* Menú superior */
-    width: 150px; /* Para darle espacio */
+    z-index: 200; 
+    width: 150px; 
     }
     
 .dropdown li {
@@ -143,7 +143,7 @@ body {
     }
     
 .menu-item:hover .dropdown {
-      display: block; /* Mostrar cuando se hace clic */
+      display: block; 
     }
     
 
