@@ -396,6 +396,56 @@ button:hover {
   background-color: #ff3333;
 }
 
+@media only screen and (max-width: 768px) {
+  .cart {
+      padding: 10px;
+  }
+
+  .cart-table thead {
+      display: none; /* Ocultar encabezados en pantallas pequeñas */
+  }
+
+  .cart-table, .cart-table tbody, .cart-table tr, .cart-table td {
+      display: block;
+      width: 100%;
+  }
+
+  .cart-table tr {
+      margin-bottom: 20px; /* Espacio entre filas */
+  }
+
+  .cart-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+      border: none; /* Quitar bordes */
+      border-bottom: 1px solid #ddd;
+  }
+
+  .cart-table td:before {
+      content: attr(data-label); /* Agregar el texto de los encabezados antes del contenido */
+      position: absolute;
+      left: 15px;
+      top: 0;
+      text-align: left;
+      font-weight: bold;
+  }
+
+  .cart-table img {
+      width: 60px; /* Reducir el tamaño de las imágenes */
+  }
+
+  .cart-actions {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #checkout {
+      width: 100%; /* Hacer el botón ocupar el ancho completo */
+      margin-top: 20px;
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
